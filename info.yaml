@@ -1,7 +1,7 @@
 # Tiny Tapeout project information
 project:
   title:        "A lightweight Present cipher"      # Project title
-  author:       "Subir Maity"      # Your name
+  author:       "Himadri Ghosh, Aditya Panigrahi, Chiranjeet Bhattacharjee, Debaditya Dasgupta, Subir Kr. Maity"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "Present cipher : Encryption and decryption"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
