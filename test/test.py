@@ -26,7 +26,12 @@ async def crypto_test_with_assertions(dut):
     test_cases = [
         {"ui": 0xDF, "key": 0b010010, "start": 1, "ed": 1, "expected": 0x61}, # Enc 1
         {"ui": 0x6A, "key": 0b11001,  "start": 1, "ed": 1, "expected": 0x8F}, # Enc 2
+        {"ui": 0x92, "key": 0b101011,  "start": 1, "ed": 1, "expected": 0xF7}, # Enc 3
+        {"ui": 0xA7, "key": 0b110110,  "start": 1, "ed": 1, "expected": 0xD2}, # Enc 4
+        {"ui": 0x3C, "key": 0b100011,  "start": 1, "ed": 1, "expected": 0xA7}, # Enc 5
         {"ui": 0x61, "key": 0b010010, "start": 1, "ed": 0, "expected": 0xDF}, # Dec 1
+        {"ui": 0x8F, "key": 0b11001, "start": 1, "ed": 0, "expected": 0x6A}, # Dec 2
+        {"ui": 0xF7, "key": 0b0101011, "start": 1, "ed": 0, "expected": 0x92}, # Dec 3
     ]
 
     for test in test_cases:
